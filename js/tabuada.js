@@ -18,3 +18,7 @@ console.log(typeof arrayBotao);
 console.log(arrayBotao);
 console.log(arrayBotao.length);
 console.log(arrayBotao[10].innerText);
+
+arrayBotao.forEach(function(){
+    
+})
