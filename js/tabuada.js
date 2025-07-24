@@ -27,7 +27,7 @@ const arrayBotao = document.getElementsByName("botao");
 
 arrayBotao.forEach(function (btnAtual) {
     // console.log(btnAtual.innerText);
-    btnAtual.addEventListener("click", function () {
+    btnAtual.addEventListener("mouseover", function () {
         //    alert(`Olá ${btnAtual.innerText}`);
         let tabela = btnAtual.innerHTML;
         let conjunto = '';
@@ -36,5 +36,9 @@ arrayBotao.forEach(function (btnAtual) {
         }
 
         document.getElementById("resultado").innerHTML = conjunto;
+
+        btnAtual.addEventListener("mouseleave", function(){
+            document.getElementById("resultado").innerHTML = "";
+        })
     });
 })
